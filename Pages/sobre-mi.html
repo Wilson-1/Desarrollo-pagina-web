@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí - Wilson Criollo</title>
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="../Styles/main.css">
+    <link rel="stylesheet" href="../Styles/hero.css">
+    <link rel="stylesheet" href="../Styles/footer.css">
+    <style>
+        .seccion-sobre {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 60px 30px;
+            max-width: 1000px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .seccion-sobre h2 {
+            color: #667eea;
+            font-size: 36px;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .contenido-sobre {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        .contenido-sobre img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .contenido-sobre p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .habilidades {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .habilidades h3 {
+            color: #333;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .lista-habilidades {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .lista-habilidades li {
+            padding: 10px;
+            background-color: white;
+            border-left: 4px solid #667eea;
+            color: #555;
+        }
+
+        .experience {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .experience h3 {
+            color: #333;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .exp-item {
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+            margin: 20px 0;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .exp-item:last-child {
+            border-bottom: none;
+        }
+
+        .exp-item h4 {
+            color: #667eea;
+            margin: 0 0 5px 0;
+        }
+
+        .exp-item .puesto {
+            color: #333;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .exp-item .fecha {
+            color: #999;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .exp-item p {
+            color: #666;
+            margin: 10px 0 0 0;
+        }
+
+        .cta-button {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-button a {
+            display: inline-block;
+            background-color: #667eea;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button a:hover {
+            background-color: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            .contenido-sobre {
+                grid-template-columns: 1fr;
+            }
+
+            .lista-habilidades {
+                grid-template-columns: 1fr;
+            }
+
+            .seccion-sobre {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegación -->
+    <nav>
+        <div class="logo">
+            <a href="../index.html" style="color: white; text-decoration: none;">Wilson Criollo</a>
+        </div>
+    </nav>
+
+    <div class="nav-links">
+        <ul>
+            <li><a href="../index.html#home">Inicio</a></li>
+            <li><a href="../Pages/sobre-mi.html">Sobre mí</a></li>
+            <li><a href="../index.html#projects">Servicios</a></li>
+            <li><a href="../Pages/portafolio.html">Portafolio</a></li>
+            <li><a href="../Pages/contactanos.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Sección Sobre Mí Completa -->
+    <section class="seccion-sobre">
+        <h2>Sobre mí</h2>
+        
+        <div class="contenido-sobre">
+            <div>
+                <p>
+                    Soy Wilson Criollo, un estudiante de desarrollo web con más de 2 años de experiencia 
+                    en la creación de soluciones digitales innovadoras. Mi objetivo es ayudar a negocios y 
+                    emprendedores a establecer una sólida presencia en línea que genere resultados reales.
+                </p>
+                <p>
+                    Desde mi inicio en el mundo del desarrollo web, he tenido la oportunidad de trabajar 
+                    con empresas de diferentes tamaños, desde startups hasta medianas empresas. Esto me ha 
+                    permitido desarrollar una comprensión profunda de los diferentes desafíos que enfrenta 
+                    cada negocio en el ambiente digital.
+                </p>
+                <p>
+                    Creo que un buen sitio web no es solo sobre la estética, sino también sobre la funcionalidad, 
+                    la usabilidad y los resultados. Por eso, cada proyecto que realizo está enfocado en crear 
+                    experiencias excepcionales para los usuarios finales.
+                </p>
+            </div>
+            <div>
+                <img src="../Images/image.jpg" alt="Wilson Criollo">
+            </div>
+        </div>
+
+        <div class="habilidades">
+            <h3>Habilidades Técnicas</h3>
+            <ul class="lista-habilidades">
+                <li>✓ HTML5 & CSS3</li>
+                <li>✓ JavaScript & TypeScript</li>
+                <li>✓ React.js</li>
+                <li>✓ Node.js & Express</li>
+                <li>✓ MySQL & PostgreSQL</li>
+                <li>✓ MongoDB</li>
+                <li>✓ Git & GitHub</li>
+                <li>✓ SEO & Web Performance</li>
+                <li>✓ Responsive Design</li>
+                <li>✓ APIs REST</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h3>Experiencia Laboral</h3>
+            
+            <div class="exp-item">
+                <h4>Desarrollador Web Senior</h4>
+                <div class="puesto">CCSUD</div>
+                <div class="fecha">2024 - 2024</div>
+                <p>
+                    Lideré proyectos web para clientes corporativos, implementando soluciones completas 
+                    desde el diseño hasta el desarrollo y despliegue. Optimicé sitios web logrando mejorar 
+                    el posicionamiento SEO de clientes hasta las primeras posiciones de Google.
+                </p>
+            </div>
+
+            <div class="exp-item">
+                <h4>Desarrollador Web Full Stack</h4>
+                <div class="puesto">Hospotal del Rio</div>
+                <div class="fecha">2023 - 2024</div>
+                <p>
+                    Desarrollé aplicaciones web completas utilizando React.js en el frontend y Node.js 
+                    en el backend. Trabajé en la creación de APIs REST y optimización de bases de datos.
+                </p>
+            </div>
+
+            <div class="exp-item">
+                <h4>Desarrollador Web Junior</h4>
+                <div class="puesto">Empresa electrica</div>
+                <div class="fecha">2022 - 2023</div>
+                <p>
+                    Comencé mi carrera como freelancer desarrollando sitios web para pequeños negocios 
+                    locales. Aprendí a trabajar directamente con clientes y entender sus necesidades específicas.
+                </p>
+            </div>
+        </div>
+
+        <div style="background-color: #f0f0f0; padding: 30px; border-radius: 10px; margin: 30px 0; text-align: center;">
+            <h3 style="color: #333; margin-top: 0;">Filosofía de Trabajo</h3>
+            <p style="color: #666; font-size: 16px;">
+                Creo que la comunicación clara y la colaboración son clave para el éxito de cualquier proyecto. 
+                Me comprometo a entender tus objetivos de negocio y crear soluciones que no solo cumplan tus expectativas, 
+                sino que las superen.
+            </p>
+        </div>
+
+        <div class="cta-button">
+            <a href="../Pages/contactanos.html">¿Hablamos de tu proyecto?</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Wilson Criollo. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>

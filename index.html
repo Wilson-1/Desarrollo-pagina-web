@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wilson Criollo</title>
-    <link rel="stylesheet" href="Styles/styles.css">
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/hero.css">
+    <link rel="stylesheet" href="Styles/servicios.css">
+    <link rel="stylesheet" href="Styles/portafolio.css">
+    <link rel="stylesheet" href="Styles/contacto.css">
+    <link rel="stylesheet" href="Styles/footer.css">
 </head>
 <body>
     <!-- Navegación -->
@@ -17,10 +23,10 @@
      <div class="nav-links">
         <ul>
             <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="Pages/sobre-mi.html">Sobre mí</a></li>
             <li><a href="#projects">Servicios</a></li>
-            <li><a href="#portfolio">Portafolio</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="Pages/portafolio.html">Portafolio</a></li>
+            <li><a href="Pages/contactanos.html">Contacto</a></li>
         </ul>
      </div>
 
@@ -30,7 +36,7 @@
         <div class="contenedor prinsipal">
             <h1>Wilson Criollo</h1>
             <h2>Desarrollador Web</h2>
-            <button>Ver mis trabajos</button>
+            <button onclick="window.location.href='Pages/portafolio.html'">Ver mis trabajos</button>
 
         </div>
      </header>
@@ -42,46 +48,107 @@
 
             </div>
             <div class="ContenidoSObreMi">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eos repellendus vel magnam ad! Mollitia quod eos cumque, voluptates corrupti repellat expedita quibusdam neque iusto architecto quas sed in ducimus?
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui similique, placeat consequuntur odit cupiditate repellat iure deserunt obcaecati exercitationem beatae est adipisci dolores, possimus molestias nesciunt asperiores sequi ducimus nemo.
+                <p>Soy Wilson Criollo, un desarrollador web apasionado con más de 5 años de experiencia creando soluciones digitales innovadoras que ayudan a negocios a prosperar en el mundo online.</p>
+                <p>Mi objetivo es crear sitios web que no solo se vean hermosos, sino que también generen resultados reales para mis clientes. Especializado en diseño responsive, optimización SEO y desarrollo web moderno con las últimas tecnologías.
                 </p>
             </div>
-            <button>Ver mis trabajos</button>
+            <button onclick="window.location.href='Pages/sobre-mi.html'">Conoce más sobre mí</button>
         </section>
     <!-- Seccion Servicios -->
-     <seccion class="Servicios">
+     <section id="projects" class="Servicios">
         <h3>Servicios</h3>
         <div class="servicio">
             <h3>Diseño Web</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eveniet, consectetur, placeat assumenda quaerat, magnam omnis quia ut dignissimos tenetur sed provident beatae suscipit esse magni excepturi delectus necessitatibus quo.</p>
-            <button>@</button>
+            <p>Creo sitios web modernos y funcionales adaptados a tus necesidades. Utilizando las últimas tecnologías para garantizar un sitio web profesional y efectivo.</p>
+            <button onclick="window.location.href='Pages/diseño-web.html'">Más info</button>
         </div>
         <div class="Servicio">
             <h3>Diseño Responsive</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eveniet, consectetur, placeat assumenda quaerat, magnam omnis quia ut dignissimos tenetur sed provident beatae suscipit esse magni excepturi delectus necessitatibus quo.</p>
-            <button>@</button>
+            <p>Diseño adaptable a cualquier dispositivo. Garantizo que tu sitio se vea perfecto en móviles, tablets y computadoras de escritorio.</p>
+            <button onclick="window.location.href='Pages/responsive-design.html'">Más info</button>
         </div>
         <div class="Servicio">
             <h3>SEO</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eveniet, consectetur, placeat assumenda quaerat, magnam omnis quia ut dignissimos tenetur sed provident beatae suscipit esse magni excepturi delectus necessitatibus quo.</p>
-            <button>@</button>
+            <p>Optimización de motores de búsqueda para aumentar tu visibilidad en Google. Mejora tu posicionamiento y atrae más clientes orgánicamente.</p>
+            <button onclick="window.location.href='Pages/seo.html'">Más info</button>
         </div>
         <div class="Servicio">
             <h3>Autoadminitrable</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eveniet, consectetur, placeat assumenda quaerat, magnam omnis quia ut dignissimos tenetur sed provident beatae suscipit esse magni excepturi delectus necessitatibus quo.</p>
-            <button>@</button>
+            <p>Sitios web que puedes administrar fácilmente sin conocimientos técnicos. Panel de control intuitivo y amigable para gestionar tu contenido.</p>
+            <button>Más info</button>
         </div>
         <div class="Servicio">
             <h3>Mantenimiento</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eveniet, consectetur, placeat assumenda quaerat, magnam omnis quia ut dignissimos tenetur sed provident beatae suscipit esse magni excepturi delectus necessitatibus quo.</p>
-            <button>@</button>
+            <p>Soporte técnico continuo para tu sitio web. Actualizaciones de seguridad, copias de respaldo y resolución de problemas disponibles.</p>
+            <button>Más info</button>
         </div>
         <div class="Servicio">
-            <h3>Marqueting digital</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eveniet, consectetur, placeat assumenda quaerat, magnam omnis quia ut dignissimos tenetur sed provident beatae suscipit esse magni excepturi delectus necessitatibus quo.</p>
-            <button>@</button>
+            <h3>Marketing Digital</h3>
+            <p>Estrategias de marketing para aumentar tus conversiones. Social media, publicidad digital y estrategia de contenidos integrada.</p>
+            <button>Más info</button>
         </div>
+     </section>
 
+    <!-- Seccion Portafolio -->
+    <section id="portfolio" class="Portafolio">
+        <h3>Mi Portafolio</h3>
+        <p style="text-align: center; color: #666; margin-bottom: 50px; font-size: 16px;">
+            Aquí se muestran algunos de mis proyectos más destacados. 
+            <a href="Pages/portafolio.html" style="color: #667eea; text-decoration: none; font-weight: bold;">Ver portafolio completo →</a>
+        </p>
+        <div class="contenedor-portfolio">
+            <div class="proyecto">
+                <img src="Images/Tienda Online.png" alt="E-commerce Tienda Online">
+                <h4>E-commerce Tienda Online</h4>
+                <p>Plataforma de comercio electrónico completa con carrito de compras, pasarela de pago integrada y panel de administración.</p>
+                <a href="Pages/portafolio.html">Ver proyecto</a>
+            </div>
+            <div class="proyecto">
+                <img src="Images/Portal de Servicios.webp" alt="Portal de Servicios">
+                <h4>Portal de Servicios</h4>
+                <p>Sistema web para gestión de citas y servicios. Incluye reservas online, calendario interactivo y notificaciones automáticas.</p>
+                <a href="Pages/portafolio.html">Ver proyecto</a>
+            </div>
+            <div class="proyecto">
+                <img src="Images/Blog Profesional.png" alt="Blog Profesional">
+                <h4>Blog Profesional</h4>
+                <p>Blog responsivo con sistema de categorías, comentarios, búsqueda avanzada y optimización SEO completa.</p>
+                <a href="Pages/portafolio.html">Ver proyecto</a>
+            </div>
+            <div class="proyecto">
+                <img src="Images/Dashboard Analítica.png" alt="Dashboard Analítica">
+                <h4>Dashboard Analítica</h4>
+                <p>Panel de control con gráficos estadísticos en tiempo real. Ideal para análisis de datos y generación de reportes.</p>
+                <a href="Pages/portafolio.html">Ver proyecto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Contacto -->
+    <section id="contact" class="Contacto">
+        <h3>Contáctanos</h3>
+        <p style="text-align: center; color: #666; margin-bottom: 40px; font-size: 18px; max-width: 600px; margin-left: auto; margin-right: auto;">
+            ¿Tienes un proyecto en mente o preguntas sobre nuestros servicios? 
+            Nos encantaría escucharte. Completa el formulario y nos pondremos en contacto contigo pronto.
+        </p>
+        <div style="text-align: center;">
+            <button onclick="window.location.href='Pages/contactanos.html'" style="background-color: #667eea; color: white; border: none; padding: 15px 40px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 16px;">Ir al formulario de contacto</button>
+        </div>
+        <div style="text-align: center; margin-top: 30px;">
+            <p style="color: #666;"><strong>O contáctanos directamente:</strong></p>
+            <p style="color: #666;">Email: wilsoncriollo958@gmail.com | Teléfono: +593 988901015</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Wilson Criollo. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+    </footer>
 </body>
 </html>

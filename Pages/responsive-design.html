@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Responsive - Wilson Criollo</title>
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="../Styles/main.css">
+    <link rel="stylesheet" href="../Styles/servicios.css">
+    <link rel="stylesheet" href="../Styles/footer.css">
+    <style>
+        .servicio-detalle {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .servicio-detalle h2 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .servicio-detalle p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .caracteristicas {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .caracteristicas h3 {
+            color: #333;
+            margin-top: 0;
+        }
+        
+        .caracteristicas ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .caracteristicas li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            color: #555;
+        }
+        
+        .caracteristicas li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegación -->
+    <nav>
+        <div class="logo">
+            <a href="../index.html" style="color: white; text-decoration: none;">Wilson Criollo</a>
+        </div>
+    </nav>
+
+    <div class="nav-links">
+        <ul>
+            <li><a href="../index.html#home">Inicio</a></li>
+            <li><a href="../index.html#about">Sobre mí</a></li>
+            <li><a href="../index.html#projects">Servicios</a></li>
+            <li><a href="../Pages/portafolio.html">Portafolio</a></li>
+            <li><a href="../Pages/contactanos.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenido Responsive Design -->
+    <section class="Servicios">
+        <div class="servicio-detalle">
+            <h2>Diseño Responsive - Adaptable a todos los dispositivos</h2>
+            
+            <p>
+                En la era digital actual, más del 70% de los accesos a internet provienen de dispositivos móviles. 
+                Por eso, el diseño responsive es fundamental para garantizar una experiencia óptima en cualquier pantalla.
+            </p>
+            
+            <div class="caracteristicas">
+                <h3>Beneficios del Diseño Responsive</h3>
+                <ul>
+                    <li>Adaptación automática a cualquier tamaño de pantalla</li>
+                    <li>Mejor experiencia de usuario en móviles y tablets</li>
+                    <li>Mejora en el posicionamiento SEO de Google</li>
+                    <li>Reducción de tasa de rebote</li>
+                    <li>Aumento de conversiones y ventas</li>
+                    <li>Mantenimiento simplificado (un solo sitio)</li>
+                    <li>Compatibilidad con todos los navegadores</li>
+                    <li>Carga rápida en conexiones lentas</li>
+                </ul>
+            </div>
+            
+            <h3>Dispositivos que soportamos</h3>
+            <p>
+                Nuestros sitios web se adaptan perfectamente a:
+            </p>
+            <ul>
+                <li><strong>Teléfonos móviles:</strong> iPhones, Android (320px - 480px)</li>
+                <li><strong>Tablets:</strong> iPad, Galaxy Tab (768px - 1024px)</li>
+                <li><strong>Computadoras de escritorio:</strong> (1025px en adelante)</li>
+            </ul>
+            
+            <h3>Metodología Mobile-First</h3>
+            <p>
+                Utilizamos el enfoque "Mobile-First" que significa diseñar primero para dispositivos móviles 
+                y luego expandir el diseño para pantallas más grandes. Esto garantiza una experiencia óptima 
+                en todos los dispositivos, priorizando lo que es realmente importante para el usuario móvil.
+            </p>
+            
+            <h3>Herramientas que utilizamos</h3>
+            <p>
+                CSS Media Queries, Flexbox, CSS Grid, Bootstrap, Tailwind CSS y otras herramientas modernas 
+                nos permiten crear diseños responsive de alta calidad que se ven perfectos en cualquier dispositivo.
+            </p>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="../Pages/contactanos.html" style="display: inline-block; background-color: #667eea; color: white; padding: 15px 40px; text-decoration: none; border-radius: 5px; font-weight: bold;">Solicitar presupuesto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Wilson Criollo. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>
