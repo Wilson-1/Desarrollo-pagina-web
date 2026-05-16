@@ -56,21 +56,58 @@ Desarrollo-pagina-web/
     └── image.jpg
 ```
 
+## ⚙️ Configuración del Proyecto
+
+### ¿Qué es `.hintrc`?
+
+El archivo `.hintrc` es la **configuración de WebHint**, una herramienta que valida y mejora la calidad de tu sitio web.
+
+**WebHint detecta:**
+- ❌ Errores en HTML y CSS
+- 🔒 Problemas de seguridad
+- ♿ Problemas de accesibilidad
+- ⚡ Oportunidades de rendimiento
+- 📱 Compatibilidad con navegadores
+- 🎨 Mejores prácticas de desarrollo
+
+**Configuración actual:**
+```json
+{
+  "extends": ["development"],
+  "hints": {
+    "no-inline-styles": "off"
+  }
+}
+```
+
+**Explicación:**
+- `extends: ["development"]` - Usa un conjunto de reglas predefinidas para desarrollo
+- `no-inline-styles: "off"` - Permite estilos inline sin avisos (ej: `style="color: red;"`)
+
+**Para qué sirve en este proyecto:**
+- Validar que el HTML sea semántico y correcto
+- Verificar seguridad en enlaces externos
+- Detectar problemas de accesibilidad
+- Asegurar buenas prácticas en CSS y JavaScript
+
 ## 🎨 Diseño y Estilo
 
 ### Paleta de Colores
+
 - **Primario**: #667eea (Morado azulado)
 - **Secundario**: #764ba2 (Morado oscuro)
 - **Nav**: #2c3e50 - #34495e (Gris oscuro)
 - **Fondo**: Gradiente 135deg de #667eea a #764ba2
 
 ### Tipografía
+
 - Fuente: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 - H1: 56px (32px en móvil)
 - H2: 28px (18px en móvil)
 - H3: 42px (24px en móvil)
 
 ### Breakpoints Responsive
+
 - **Escritorio**: 769px+
 - **Tablets**: 481px - 768px
 - **Celulares**: 320px - 480px
@@ -99,7 +136,7 @@ Desarrollo-pagina-web/
 
 ## 📞 Información de Contacto
 
-- **Email**: wilsoncriollo958@gmail.com
+- **Email**: <wilsoncriollo958@gmail.com>
 - **Teléfono**: +593 988901015
 - **Ubicación**: Ecuador
 
@@ -113,22 +150,27 @@ Desarrollo-pagina-web/
 ## 📝 Cambios Recientes (v1.1)
 
 ### Seguridad
+
 - ✅ Agregado `rel="noopener noreferrer"` a enlaces externos
 
 ### Diseño
+
 - ✅ Servicios: 2 → 3 tarjetas por fila
 - ✅ Nuevo layout centrado
 
 ### Responsive Design
+
 - ✅ Optimización completa para tablets (768px)
 - ✅ Optimización completa para celulares (480px)
 - ✅ Viewport acoplado (sin scroll horizontal)
 
 ### Imágenes
+
 - ✅ Reemplazo de imágenes placeholder
 - ✅ 6 imágenes de proyectos reales
 
 ### Correcciones
+
 - ✅ Reparación de errores CSS
 - ✅ Validación de sintaxis
 
